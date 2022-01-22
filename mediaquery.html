@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+
+    <style>
+      div {
+        border:5px solid green;
+        font-size:60px;
+      }
+      @media (min-width:800px) {
+        /*뜻 : @media(min-width:800px) {} = screen width > 800px
+        스크린의 화면이 800px보다 크다면
+                밑에 div 코드가 작동하게 된다.
+          뜻 :@media(max-width:800px) {} = screen width < 800px
+        스크린의 화면이 800px보다 작다면
+        -미디어 쿼리라는 것 : 어떠한 조건을 만족할때만 CSS내용이 동작하도록 하는 것이 가능
+                             여러가지 형태의 화면이 존재하는 세상에서 굉장히 중요한 기능.
+        */
+        div {
+          display:none;
+      }
+    }
+      /*
+      상위 내용 중, @media(min-width:800px)
+      screen width > 800px과 @media(min-width:800px)는 같은 말
+      하여, 중복을 피하기 위해 screen width > 800px를 지움.
+      */
+    </style>
+  </head>
+    <body>
+      <div>
+        Responsive
+      </div>
+    </body>
+</html>

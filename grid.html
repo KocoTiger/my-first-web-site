@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    #grid {
+      border:5px solid pink;
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    div {
+      border:5px solid gray;
+    }
+
+
+
+/*
+-태그 div : 무 의미, 단지 디자인 용도,block 전체 씀,그래서 자동 줄바꿈
+-태그 span :무 의미, 단지 디자인 용도,Inline Element,그래서 자동 줄바꿈
+-나란히 배치하고 싶거나 어떤 배치를 하기 위해서 div를 부모 태그로 감싸고 id를 넣음.
+-1fr : 화면 전체를 자동으로 조정되어 쓰는 것
+-그리드라는 기능을  쓰려면, 내가 써도 되는지 아닌지를 판단할 필요가 있다.
+참고 : caniuse.com
+*/
+</style>
+
+</head>
+<body>
+  <div id="grid">
+    <div>NAVIGATION</div>
+    <div>Our partnership with BrowserStack now lets you test your website for compatibility across 2,000+ real browsers and devices.
+    </div>
+ </div>
+
+</body>
+</html>
