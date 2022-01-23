@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Loop & Array (반복과 배열)</h1>
+    <script>
+      var coworkers = ['egoing','leezche','duru','taeho'];
+    </script>
+    <h2>Co workers</h2>
+      <ul>
+        <script>
+      var i = 0;
+      while (i < coworkers.length){
+       document.write('<li><a href ="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+       i = i + 1;
+        }
+        </script>
+      </ul>
+  </body>
+</html>
+
+<!--
+<배열과 반복문을 활용>
+아래 코드는 while의 변수 값을 4이하로 잡았기 때문에 coworkers의 개수(데이터의 개수)에
+따라 일일이 수정해줘야한다는 번거러움이 있음.
+<body>
+  <h1>Loop & Array (반복과 배열)</h1>
+  <script>
+    var coworkers = ['egoing','leezche','duru','taeho'];
+  </script>
+  <h2>Co workers</h2>
+    <ul>
+      <script>
+    var i = 0;
+    while (i < 4){
+     document.write('<li></li>');
+     i = i + 1;
+      }
+      </script>
+    </ul>
+</body>
+
+아래코드를 이용한다면 데이터 값이 바껴도 알아서 적용
+<body>
+  <h1>Loop & Array (반복과 배열)</h1>
+  <script>
+    var coworkers = ['egoing','leezche','duru','taeho'];
+  </script>
+  <h2>Co workers</h2>
+    <ul>
+      <script>
+    var i = 0;
+    while (i < coworkers.length){
+     document.write('<li>'+coworkers[i]+'</li>');
+     i = i + 1;
+      }
+      </script>
+    </ul>
+</body>
+
+아래는 document.write('<li>'+coworkers[i]+'</li>'); 코드를
+document.write('<li><a href ="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+코드로 다시 쓴것으로,
+결과적으로 웹상에 이름이 하이퍼링크 처리되면서 각각의 데이터가
+http://a.com/ + coworkers들의 이름이 순차적으로 나열된다.
+
+<body>
+  <h1>Loop & Array (반복과 배열)</h1>
+  <script>
+    var coworkers = ['egoing','leezche','duru','taeho'];
+  </script>
+  <h2>Co workers</h2>
+    <ul>
+      <script>
+    var i = 0;
+    while (i < coworkers.length){
+     document.write('<li><a href ="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+     i = i + 1;
+      }
+      </script>
+    </ul>
+</body>
+
+
+<학습중 메모>
+1. 개발자는 데이터가 바뀌었다고 로직을 바꾸는 것을 창피스러워 한다
+
+<학습중 error사항>
+1. 손으로 써서 익히려 하니, 오타가 많고 오타를 찾기 위해서 시간이 많이 걸림. (오타와의 싸움)
+
+
+  -->

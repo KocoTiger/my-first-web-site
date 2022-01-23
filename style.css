@@ -1,0 +1,44 @@
+body {
+  margin:0px;
+}
+ a {   /*tag값 /우선 순위 : ID>Class>Tag */
+   color: black;
+   text-decoration: none;
+ }
+ h1 {
+   font-size: 45px;
+   text-align: center;
+   border-bottom: 1px solid gray; /*아래쪽만 줄이 그어짐 */
+   margin:0;
+   padding:20px
+  /* border:1px solid gray; 전체적으로 테두리가 쳐짐 */
+ }
+ ol { /*ol은 화면 전체를 쓰는 Blocl Level Element다 */
+   border-right:1px solid gray;
+   width:100px;
+   margin:0px;
+   padding:33px;
+   padding-lef:33px;
+ }
+ #grid {
+   display:grid;
+   grid-template-columns:150px 1fr; /*그리드 템플 콜럼:첫번째 태그 ol, 1fr은 두번째 태그 h2를 편집 */
+ }
+ #grid ol {
+   padding-lef:33px;
+ }
+ #grid #article{
+   padding-left: 33px;
+ }
+
+ @media (max-width:800px) { /*screen width < 800px 이면 아래 처럼 grid가 밑으로 내려옴, block레벨이 되기 때문 */
+   #grid {
+     display:block;
+   }
+   ol {
+     border-right:none;
+   }
+   h1 {
+     border-bottom:none;
+  }
+ }

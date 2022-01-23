@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <h1>Loop (반복문)</h1>
+    <ul>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while(i < 3){
+      document.write('<li>2</li>');
+      document.write('<li>3</li>');
+      i = i + 1;
+        }
+      document.write('<li>4</li>');
+    </script>
+    </ul>
+  </body>
+</html>
+
+<!--
+<Loop 반복문>
+- 반복되는 것이 1억개 이상이라면 반복하는것이 힘들다. (유지보수 힘듬)
+
+<반복문에서 while, for문>
+-if(boolean이 들어감, true or false){}
+(실습)
+아래와 같이 쓰면, 무한히 반복 되기 때문에 컴퓨터 자원을 다 가져가 버린다. (실행이 안됨)
+반복문을 쓸때는 언제 종료될 것인지를 지정하는 것이 필요!
+하여, 변수var가 필요
+i라는 변수에 주로 시킨다.
+<script>
+  document.write('<li>1</li>');
+  while(true){
+  document.write('<li>2</li>');
+  document.write('<li>3</li>');
+    }
+  document.write('<li>4</li>');
+</script>
+
+i = i + 1; i는 기존의 값(0)에 1의 값을 더하여 i의 새로운 값으로 준다하는 뜻.
+만약 3번 우리가 이 반복문을 실행하고 싶다면
+<script>
+  document.write('<li>1</li>');
+  var i = 0;
+  while(i < 3){
+  document.write('<li>2</li>');
+  document.write('<li>3</li>');
+  i = i + 1;
+    }
+  document.write('<li>4</li>');
+</script>
+결과값 :
+1
+
+2
+3
+
+2
+3
+
+2
+3
+
+4
+
+
+
+  -->
